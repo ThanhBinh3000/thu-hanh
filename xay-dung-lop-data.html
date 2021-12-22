@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp data</title>
+</head>
+<body>
+<script>
+    class Nex {
+        day;
+        month;
+        year;
+
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        get day() {
+            return this.day;
+        }
+
+        get month() {
+            return this.month;
+        }
+
+        get year() {
+            return this.year;
+        }
+
+        set day(day) {
+            this.day = day;
+        }
+
+        set month(month) {
+            this.month = month;
+        }
+
+        set year(year) {
+            this.year = year;
+        }
+    }
+    let time= new Nex(2,2,2017);
+    time.year=2021;// thay đổi ngày tháng năm
+   console.log(time.year);
+</script>
+</body>
+</html>
